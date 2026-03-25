@@ -11,12 +11,12 @@ Este projeto implementa uma estrutura de dados para gerenciar itinerários utili
 
 **Professor:** Luiz Henrique Américo Salazar
 
-## 🛠️ Requisitos
+## Requisitos
 * **Compilador:** GCC (g++) versão 11.0 ou superior.
 * **Ambiente:** VSCode ou qualquer terminal com suporte a Make/CMake.
 * **Extensões sugeridas (VSCode):** C/C++, CMake Tools.
 
-## 🚀 Compilação e Execução
+## Compilação e Execução
 
 ### Fluxo Principal
 Para compilar o código principal a partir da raiz:
