@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void limparConsole() {
+static void limparConsole() {
     #ifdef _WIN32
         system("cls");
     #else
