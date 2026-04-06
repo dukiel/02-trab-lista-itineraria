@@ -9,8 +9,11 @@ Sistema de gerenciamento de itinerários de transporte utilizando Lista Duplamen
 ## Identificação
 
 **Instituição:** Universidade do Vale do Itajaí (UNIVALI)
+
 **Curso:** Ciência da Computação
+
 **Aluno:** Daniel Luiz Cardoso
+
 **Professor:** Luiz Henrique Américo Salazar
 
 ## Requisitos
