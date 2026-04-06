@@ -68,23 +68,15 @@ tests/: Testes de unidade com assert (test.cpp).
 main.cpp: Interface de menu interativo para o usuário.
 
 representação visual de cada diretorio/arquivo:
+```text
 .
 ├── include/
-
 │   └── lista.h         # Definições de structs e protótipos
-
 ├── src/
-
 │   └── lista.cpp       # Implementação das funções da lista
-
 ├── tests/
-
 │   └── test.cpp        # Script de testes unitários (asserts)
-
 ├── .gitignore          # Filtro de arquivos para o Git
-
 ├── CMakeLists.txt      # Configuração do build system
-
 ├── main.cpp            # Interface principal (Menu)
-
 └── README.md           # Documentação do projeto
