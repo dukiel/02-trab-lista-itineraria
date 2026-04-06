@@ -69,7 +69,7 @@ Implementa uma busca flexível utilizando string::npos, permitindo encontrar par
 
 ## Organização do Projeto
 ```text
-src/: Implementação da lógica (lista.cpp).
+**src/:** Implementação da lógica (lista.cpp).
 include/: Definições de estruturas e protótipos (lista.h).
 tests/: Testes de unidade com assert (test.cpp).
 main.cpp: Interface de menu interativo para o usuário.
