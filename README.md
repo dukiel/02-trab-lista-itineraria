@@ -30,14 +30,14 @@ Para utilizar o diretorio de tests, o programa foi feito de uma forma que dê pr
 No arquivo cmakelists.txt, vc irá deixar um # na linha em que deseje ignorar, e livre na linha que deseje compilar, por ex:
 
 ```text
-Compilar o main:
+rodar o main:
 cmakeists.txt
 └── linha 7: #add_ex...
 └── linha 8: add_ex...
 ```
 
 ```text
-Compilar o teste:
+rodar o teste:
 cmakeists.txt
 └── linha 7: add_ex...
 └── linha 8: #add_ex...
@@ -50,7 +50,8 @@ Voce pode rodar o codigo no seu main tambem, utilizando os respectivos comandos:
 ```text
 rodar o main:
 g++ -I include main.cpp src/lista.cpp -o programa
-
+```
+```text
 rodar os testes:
 g++ -I include tests/test.cpp src/lista.cpp -o testes
 ```
