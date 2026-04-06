@@ -24,7 +24,7 @@ O projeto usa o cmake pra gerenciar a build de forma mais simples.
 2. Configure o projeto: cmake ...
 3. Compile: cmake --build ..
 
-### Teste e main
+## Teste e main
 > (opção 1)
 Para utilizar o diretorio de tests, o programa foi feito de uma forma que dê pra fazer uma alternancia entre o "main" e o "test" de forma simples.
 No arquivo cmakelists.txt, vc irá deixar um # na linha em que deseje ignorar, e livre na linha que deseje compilar, por ex:
@@ -67,7 +67,7 @@ include/: Definições de estruturas e protótipos (lista.h).
 tests/: Testes de unidade com assert (test.cpp).
 main.cpp: Interface de menu interativo para o usuário.
 
-> representação visual de cada diretorio/arquivo:
+representação visual de cada diretorio/arquivo:
 .
 ├── include/
 │   └── lista.h         # Definições de structs e protótipos
