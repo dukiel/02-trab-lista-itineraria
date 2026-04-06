@@ -24,15 +24,15 @@ int main() {
         limparConsole();
 
         cout << "\n1 - Inserir inicio\n";
-        cout << "2 Inserir fim\n";
-        cout << "3 Inserir posicao\n";
-        cout << "4 Remover inicio\n";
-        cout << "5 Remover fim\n";
-        cout << "6 Buscar\n";
-        cout << "7 Listar\n";
-        cout << "8 Listar inverso\n";
-        cout << "9 Contar\n";
-        cout << "0 Sair\n";
+        cout << "2 - Inserir fim\n";
+        cout << "3 - Inserir posicao\n";
+        cout << "4 - Remover inicio\n";
+        cout << "5 - Remover fim\n";
+        cout << "6 - Buscar\n";
+        cout << "7 - Listar\n";
+        cout << "8 - Listar inverso\n";
+        cout << "9 - Contar\n";
+        cout << "0 - Sair\n";
 
             cin >> op;
 
@@ -72,5 +72,6 @@ int main() {
 
     } while (op != 0);
 
+    limparLista(&lista);
     return 0;
 }

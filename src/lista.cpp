@@ -49,9 +49,10 @@ void inserirPosicao(Lista* l, string nome, int pos) {
 
     Nodo* novo = new Nodo{ nome, atual->ant, atual };
 
-    atual->ant->prox = novo;
+    if (atual->ant != nullptr) {
+        atual->ant->prox = novo;
+    }
     atual->ant = novo;
-
     l->tamanho++;
 }
 
@@ -87,13 +88,17 @@ void removerFim(Lista* l) {
 
 void buscar(Lista* l, string nome) {
     Nodo* atual = l->inicio;
+    bool achou = false;
 
     while (atual != nullptr) {
-        if (atual->nome.find(nome) != string::npos)
+        if (atual->nome.find(nome) != string::npos){
             cout << "Encontrado: " << atual->nome << endl;
-
+            achou = true;
+        }
         atual = atual->prox;
     }
+    if (!achou)
+        cout << "(!) Nenhuma parada encontrda com esse nome.\n";
 }
 
 void listar(Lista* l) {
@@ -120,4 +125,10 @@ void listarInverso(Lista* l) {
 
 void contar(Lista* l) {
     cout << "Total: " << l->tamanho << endl;
+}
+
+void limparLista(Lista* l) {
+    while (l->inicio != nullptr) {
+        removerInicio(l);
+    }
 }

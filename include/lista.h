@@ -16,7 +16,6 @@ struct Lista {
     int tamanho;
 };
 
-// funções
 void inicializar(Lista* l);
 
 void inserirInicio(Lista* l, string nome);
@@ -30,5 +29,7 @@ void buscar(Lista* l, string nome);
 void listar(Lista* l);
 void listarInverso(Lista* l);
 void contar(Lista* l);
+
+void limparLista(Lista* l);
 
 #endif
