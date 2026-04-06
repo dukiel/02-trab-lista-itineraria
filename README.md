@@ -29,17 +29,20 @@ O projeto usa o cmake pra gerenciar a build de forma mais simples.
 Para utilizar o diretorio de tests, o programa foi feito de uma forma que dê pra fazer uma alternancia entre o "main" e o "test" de forma simples.
 No arquivo cmakelists.txt, vc irá deixar um # na linha em que deseje ignorar, e livre na linha que deseje compilar, por ex:
 
+```text
 Compilar o main:
 cmakeists.txt
 └── linha 7: #add_ex...
 └── linha 8: add_ex...
+```
 
 ```text
 Compilar o teste:
 cmakeists.txt
 └── linha 7: add_ex...
 └── linha 8: #add_ex...
-(ou seja, você somente alterna entre qual arquivo o cmake vai esconder na hora da compilação, e deixar livre somente o que irá ser compilado.
+(ou seja, você somente alterna entre qual arquivo o cmake vai esconder
+na hora da compilação, e deixar livre somente o que irá ser compilado.)
 ```
 > (opção 2)
 Voce pode rodar o codigo no seu main tambem, utilizando os respectivos comandos:
