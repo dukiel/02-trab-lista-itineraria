@@ -34,20 +34,23 @@ cmakeists.txt
 └── linha 7: #add_ex...
 └── linha 8: add_ex...
 
+```text
 Compilar o teste:
 cmakeists.txt
 └── linha 7: add_ex...
 └── linha 8: #add_ex...
 (ou seja, você somente alterna entre qual arquivo o cmake vai esconder na hora da compilação, e deixar livre somente o que irá ser compilado.
-
+```
 > (opção 2)
 Voce pode rodar o codigo no seu main tambem, utilizando os respectivos comandos:
 
+```text
 rodar o main:
 g++ -I include main.cpp src/lista.cpp -o programa
 
 rodar os testes:
 g++ -I include tests/test.cpp src/lista.cpp -o testes
+```
 
 ## Funções
 
@@ -61,11 +64,12 @@ Garante o gerenciamento correto da memória (evitando Memory Leaks). Percorre to
 Implementa uma busca flexível utilizando string::npos, permitindo encontrar paradas mesmo que o usuário digite apenas parte do nome.
 
 ## Organização do Projeto
-
+```text
 src/: Implementação da lógica (lista.cpp).
 include/: Definições de estruturas e protótipos (lista.h).
 tests/: Testes de unidade com assert (test.cpp).
 main.cpp: Interface de menu interativo para o usuário.
+```
 
 representação visual de cada diretorio/arquivo:
 ```text
@@ -80,3 +84,4 @@ representação visual de cada diretorio/arquivo:
 ├── CMakeLists.txt      # Configuração do build system
 ├── main.cpp            # Interface principal (Menu)
 └── README.md           # Documentação do projeto
+```
