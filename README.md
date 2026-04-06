@@ -25,25 +25,25 @@ O projeto usa o cmake pra gerenciar a build de forma mais simples.
 3. Compile: cmake --build ..
 
 ### Teste e main
-(opção 1)
+> (opção 1)
 Para utilizar o diretorio de tests, o programa foi feito de uma forma que dê pra fazer uma alternancia entre o "main" e o "test" de forma simples.
 No arquivo cmakelists.txt, vc irá deixar um # na linha em que deseje ignorar, e livre na linha que deseje compilar, por ex:
 
-> Compilar o main:
+Compilar o main:
 cmakeists.txt
 └── linha 7: #add_ex...
 └── linha 8: add_ex...
 
-> Compilar o teste:
+Compilar o teste:
 cmakeists.txt
 └── linha 7: add_ex...
 └── linha 8: #add_ex...
 (ou seja, você somente alterna entre qual arquivo o cmake vai esconder na hora da compilação, e deixar livre somente o que irá ser compilado.
 
-(opção 2)
+> (opção 2)
 Voce pode rodar o codigo no seu main tambem, utilizando os respectivos comandos:
 
-> rodar o main:
+rodar o main:
 g++ -I include main.cpp src/lista.cpp -o programa
 
 rodar os testes:
