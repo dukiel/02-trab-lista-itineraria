@@ -21,8 +21,8 @@ Sistema de gerenciamento de itinerários de transporte utilizando Lista Duplamen
 ## Compilação
 O projeto usa o cmake pra gerenciar a build de forma mais simples.
 1. na raiz do projeto, crie a pasta de build: mkdir build && cd build
-2. Configure o projeto: cmake ...
-3. Compile: cmake --build ..
+2. Configure o projeto: cmake ..
+3. Compile: cmake --build .
 
 ## Teste e main
 > (opção 1)
@@ -59,7 +59,7 @@ g++ -I include tests/test.cpp src/lista.cpp -o testes
 ## Funções
 
 > inserirPosicao
-
+Permite inserir uma parada em qualquer ponto do itinerário, ajustando automaticamente os ponteiros dos nodos vizinhos para manter a integridade da lista.
 
 > limparLista
 Garante o gerenciamento correto da memória (evitando Memory Leaks). Percorre toda a estrutura liberando cada nodo alocado com delete antes de encerrar o programa.
@@ -69,7 +69,7 @@ Implementa uma busca flexível utilizando string::npos, permitindo encontrar par
 
 ## Organização do Projeto
 ```text
-**src/:** Implementação da lógica (lista.cpp).
+src/: Implementação da lógica (lista.cpp).
 include/: Definições de estruturas e protótipos (lista.h).
 tests/: Testes de unidade com assert (test.cpp).
 main.cpp: Interface de menu interativo para o usuário.

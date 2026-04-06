@@ -34,39 +34,63 @@ int main() {
         cout << "9 - Contar\n";
         cout << "0 - Sair\n";
 
-            cin >> op;
+        cin >> op;
 
         switch (op) {
         case 1:
-            cin >> nome;
+            cout << "Nome da parada: ";
+            cin.ignore();
+            getline(cin, nome);
             inserirInicio(&lista, nome);
             break;
         case 2:
-            cin >> nome;
+            cout << "Nome da parada: ";
+            cin.ignore();
+            getline(cin, nome);
             inserirFim(&lista, nome);
             break;
         case 3:
-            cin >> nome >> pos;
+            cout << "Nome da parada: ";
+            cin.ignore();
+            getline(cin, nome);
+            cout << "Posicao: ";
+            cin >> pos;
             inserirPosicao(&lista, nome, pos);
             break;
         case 4:
+            cout << "Removido do inicio";
             removerInicio(&lista);
+            cout << "\n[Pressione ENTER para voltar]";
+            cin.get();
             break;
         case 5:
             removerFim(&lista);
             break;
         case 6:
-            cin >> nome;
+            cout << "Buscar parada: ";
+            cin.ignore();
+            getline(cin, nome);
             buscar(&lista, nome);
+            cout << "\n[Pressione ENTER para voltar]";
+            cin.get();
             break;
         case 7:
             listar(&lista);
+            cout << "\n[Pressione ENTER para voltar]";
+            cin.ignore();
+            cin.get();
             break;
         case 8:
             listarInverso(&lista);
+            cout << "\n[Pressione ENTER para voltar]";
+            cin.ignore();
+            cin.get();
             break;
         case 9:
             contar(&lista);
+            cout << "\n[Pressione ENTER para voltar]";
+            cin.ignore();
+            cin.get();
             break;
         }
 
